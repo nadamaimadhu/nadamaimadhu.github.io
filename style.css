@@ -99,15 +99,6 @@ object{
 }
 
 
-.cover{
-    min-height: 100vh;
-    display: grid;
-    place-items: center;
-    padding: 40px 24px;
-    text-align: center;
-    background: linear-gradient(white, #eaf3fa);
-}
-
 .photo{
     position: relative;
     width: 240px;
@@ -126,41 +117,6 @@ object{
     width: 548px;
     max-width: none;
 }
-
-.cover h1{
-    margin: 24px 0 0 0;
-}
-
-.cover p{
-    margin: 8px 0 28px 0;
-    color: #5a6a7c;
-}
-
-.btn{
-    display: inline-block;
-    margin: 4px;
-    padding: 10px 20px;
-    border: 2px solid #13294B;
-    border-radius: 10px;
-    font-weight: 600;
-    text-decoration: none;
-}
-
-.btn:hover{
-    background-color: #13294B;
-    color: white;
-}
-
-.btn.main{
-    background-color: #13294B;
-    color: white;
-}
-
-.btn.main:hover{
-    background-color: #4B9CD3;
-    border-color: #4B9CD3;
-}
-
 
 .quote{
     max-width: 480px;
@@ -188,6 +144,18 @@ object{
 }
 
 
+.about{
+    display: grid;
+    grid-template-columns: 240px 1fr;
+    gap: 32px;
+    align-items: start;
+}
+
+.about .quote{
+    margin: 20px 0 0 0;
+}
+
+
 footer{
     margin-top: 48px;
     padding: 16px 0;
@@ -206,6 +174,10 @@ footer .wrap{
 
 
 @media (max-width: 700px){
+    .about{
+        grid-template-columns: 1fr;
+    }
+
     h1{
         font-size: 2rem;
     }
