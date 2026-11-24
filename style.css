@@ -121,11 +121,10 @@ object{
 
 .photo img{
     position: absolute;
-    left: 50%;
-    top: 38%;
-    width: 167%;
+    left: -199px;
+    top: -16px;
+    width: 548px;
     max-width: none;
-    transform: translate(-61%, -23%);
 }
 
 .cover h1{
